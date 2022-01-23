@@ -1,0 +1,53 @@
+@keyframes down{
+
+    from{
+        transform: translateY(-100%);
+        opacity: 0; 
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear-ltr{
+
+    from{
+        transform: translateX(-100%);
+        opacity: 0; 
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear-rtl{
+
+    from{
+        transform: translateX(100%);
+        opacity: 0; 
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-down{
+    animation-name: down;
+    animation-duration: 900ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-appear-ltr{
+    animation-name: appear-ltr;
+    animation-duration: 900ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-appear-rtl{
+    animation-name: appear-rtl;
+    animation-duration: 900ms;
+    animation-fill-mode: backwards;
+}

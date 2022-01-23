@@ -1,0 +1,84 @@
+.container{
+    width: 100%;
+}
+
+div > div{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;    
+    width: 100%;
+}
+
+#computer{
+    height: calc(100vh - 20vh);
+}
+
+div#hardware{
+    background: var(--grey);
+    box-shadow: inset 3px 3px 5px 6px #ccc;
+}
+
+article.animate-appear-ltr{
+    min-width: 800px;
+    width: 60%;
+}
+
+article section{
+    background: var(--yellow);
+    height: 60vh;
+    display: flex;
+}
+
+iframe{
+    height: 40vh;
+    margin: auto;
+    width: 50%;
+    min-width: 600px;
+}
+
+aside{
+    height: 60vh;
+    text-align: center;
+    width: 40%;
+}
+
+aside > h2.sub-title{
+    font-size: 4rem;
+    margin: 100px 0 50px 0;
+}
+
+aside > p{
+    padding: 0 100px;
+    text-align: justify;
+}
+
+h2{
+    font-size: 4.6rem;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+}
+
+article > h2{
+    margin-bottom: 100px;
+    text-shadow: #ccc 5px 5px;
+}
+
+div > div > article:not(.animate-appear-ltr){
+    height: 40vh;
+    width: 40%;
+}
+
+div#hardware img{
+    height: 50rem;
+    width: 40%;
+}
+
+div#software img{
+    height: 50rem;
+    width: 35%;
+}
