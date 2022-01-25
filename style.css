@@ -6,7 +6,7 @@ div > div{
     align-items: center;
     display: flex;
     height: 100vh;
-    justify-content: space-around;    
+    justify-content: space-between;    
     width: 100%;
 }
 
@@ -21,13 +21,13 @@ div#hardware{
 
 article.animate-appear-ltr{
     min-width: 800px;
-    width: 60%;
+    width: 50%;
 }
 
 article section{
     background: var(--yellow);
-    height: 60vh;
     display: flex;
+    height: 60vh;
 }
 
 iframe{
@@ -38,9 +38,10 @@ iframe{
 }
 
 aside{
+    min-width: 700px;
     height: 60vh;
     text-align: center;
-    width: 40%;
+    width: 50%;
 }
 
 aside > h2.sub-title{
@@ -49,8 +50,19 @@ aside > h2.sub-title{
 }
 
 aside > p{
-    padding: 0 100px;
+    padding: 0 10rem;
     text-align: justify;
+}
+
+div > div > article:not(.animate-appear-ltr){
+    min-width: 300px;
+    height: 40vh;
+    width: 40%;
+}
+
+article > h2{
+    margin-bottom: 100px;
+    text-shadow: #ccc 5px 5px;
 }
 
 h2{
@@ -61,16 +73,6 @@ h2{
 p{
     font-size: 2.6rem;
     line-height: 3.4rem;
-}
-
-article > h2{
-    margin-bottom: 100px;
-    text-shadow: #ccc 5px 5px;
-}
-
-div > div > article:not(.animate-appear-ltr){
-    height: 40vh;
-    width: 40%;
 }
 
 div#hardware img{
